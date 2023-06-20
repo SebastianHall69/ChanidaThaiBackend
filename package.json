@@ -1,0 +1,41 @@
+{
+  "name": "chanida-thai-backend",
+  "version": "1.0.0",
+  "description": "Backend server hosting web API for Chanida Thai restaurant website.",
+  "main": "dist/app.js",
+  "types": "dist/types/app.d.ts",
+  "scripts": {
+    "prebuild": "npm run format:write",
+    "build": "npm run compile",
+    "postbuild": "npm run test",
+    "clean": "rm -rf dist",
+    "compile": "tsc",
+    "format:check": "eslint --ext .ts . && prettier --check .",
+    "format:write": "eslint --ext .ts --fix . && prettier --write .",
+    "server": "node dist/app.js",
+    "test": "echo put those tests in me daddy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianHall69/ChanidaThaiBackend.git"
+  },
+  "author": "Sebastian Hall (cringe ass James too, if he even does anything)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianHall69/ChanidaThaiBackend/issues"
+  },
+  "homepage": "https://github.com/SebastianHall69/ChanidaThaiBackend#readme",
+  "devDependencies": {
+    "@tsconfig/node18": "^2.0.1",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.1.3"
+  }
+}
